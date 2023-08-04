@@ -1,33 +1,26 @@
-import prompt
-from random import randint, choice
+from random import choice
+from brain_games.engine import start_game
+from brain_games.utils import get_random_num
+
+
+def calculator(num1, num2):
+    command = choice('+-*')
+    if command == '+':
+        result = str(num1 + num2)
+    elif command == '-':
+        result = str(num1 - num2)
+    else:
+        result = str(num1 * num2)
+    return result
 
 
 def brain_calculator():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}")
-    print('What is the result of the expression?')
-    count_win = 0
-    exp = 0
-    while count_win < 3:
-        num = randint(1, 100)
-        num0 = randint(1, 100)
-        command = choice('+-*')
-        if command == '+':
-            print(f"Question: {num} + {num0}")
-            exp = num + num0
-        elif command == '*':
-            print(f"Question: {num} * {num0}")
-            exp = num * num0
-        elif command == '-':
-            print(f"Question: {num} - {num0}")
-            exp = num - num0
-        answer = prompt.string('Your answer: ')
-        if int(answer) == exp:
-            print('Correct!')
-            count_win += 1
-        else:
-            return print(f"\'{answer}\' is wrong answer ;(. Correct answer was \'{exp}\'.\nLet's try again, {name}!")
-    else:
-        print(f"Congratulations, {name}!")
-        return
+    num1 = get_random_num()
+    num2 = get_random_num()
+    result = str(calculator(num1, num2))
+    command = choice('+-*')
+    question = f"{num1} {command} {num2}"
+    return question, result
+
+
+start_game(brain_calculator, 'What is the result of the expression?')

@@ -1,28 +1,19 @@
 #!/usr/bin/env python3
-
-
-import prompt
-from random import randint
 import math
+from brain_games.utils import get_random_num
+from brain_games.engine import start_game
 
 
-def gcd():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}")
-    print("Find the greatest common divisor of given numbers.")
-    count_win = 0
-    while count_win < 3:
-        num = randint(1, 100)
-        num0 = randint(1, 100)
-        print(f"Question: {num}  {num0} ")
-        answer = prompt.string('Your answer: ')
-        item = math.gcd(num, num0)
-        if item == int(answer):
-            print("Correct!")
-            count_win += 1
-        else:
-            return print(f"\'{answer}\' is wrong answer ;(.Correct answer was \'{num}\'.\nLet's try again, Sam!")
-    else:
-        print(f"Congratulations, {name}!")
-        return
+def get_gcd(num1, num2):
+    return math.gcd(num1, num2)
+
+
+def brain_gcd():
+    num1 = get_random_num()
+    num2 = get_random_num()
+    question = f'{num1} {num2}'
+    result = str(get_gcd(num1, num2))
+    return question, result
+
+
+start_game(brain_gcd, 'Find the greatest common divisor of given numbers.')

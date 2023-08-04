@@ -1,6 +1,9 @@
 import prompt
 from random import randint
 
+from brain_games.engine import start_game
+from brain_games.utils import get_random_num
+
 
 def is_prime(number):
     if number <= 1:
@@ -12,25 +15,10 @@ def is_prime(number):
 
 
 def brain_prime():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
-    print("Answer 'yes' if the number is prime, otherwise answer 'no'.")
-    count_win = 0
-    while count_win < 3:
-        number = randint(1, 100)
-        print(f"Question: {number}")
-        user_input = prompt.string("Your answer: ")
-        result = is_prime(number)
-        if result:
-            result = "yes"
-        else:
-            result = "no"
-        if result == user_input:
-            print("Correct!")
-            count_win += 1
-        else:
-            print(f"'{user_input}' is wrong answer ;(. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
+    problem_num = get_random_num()
+    result = is_prime(problem_num)
+    answer = 'yes' if is_prime(problem_num) else 'no'
+    return problem_num, answer
+
+
+start_game(brain_prime, 'Answer "yes" if the number is prime, otherwise answer "no".')
