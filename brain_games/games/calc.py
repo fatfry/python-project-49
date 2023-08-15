@@ -1,26 +1,24 @@
-from random import choice
+import random
 from brain_games.engine import start_game
 from brain_games.utils import get_random_num
 
 
-def calculator(num1, num2):
-    command = choice('+-*')
-    if command == '+':
-        result = str(num1 + num2)
-    elif command == '-':
-        result = str(num1 - num2)
-    else:
-        result = str(num1 * num2)
-    return result
+def get_math_sign_and_result(num1, num2):
+    math_list = [
+        ('+', num1 + num2),
+        ('-', num1 - num2),
+        ('*', num1 * num2)
+    ]
+    math_sign, result = random.choice(math_list)
+    return math_sign, result
 
 
-def brain_calculator():
+def brain_calc():
     num1 = get_random_num()
     num2 = get_random_num()
-    result = str(calculator(num1, num2))
-    command = choice('+-*')
-    question = f"{num1} {command} {num2}"
-    return question, result
+    math_sign, result = get_math_sign_and_result(num1, num2)
+    question = f"{num1} {math_sign} {num2}"
+    return question, str(result)
 
 
-start_game(brain_calculator, 'What is the result of the expression?')
+start_game(brain_calc, 'What is the result of the expression?')
