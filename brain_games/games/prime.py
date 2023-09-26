@@ -17,4 +17,5 @@ def brain_prime():
     return problem_num, answer
 
 
-start_game(brain_prime, 'Answer "yes" if the number is prime, otherwise answer "no".')
+def start_brain_prime():
+    start_game(brain_prime, 'Answer "yes" if the number is prime, otherwise answer "no".')

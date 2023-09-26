@@ -9,11 +9,11 @@ def get_gcd(num1, num2):
 
 
 def brain_gcd():
-    num1 = get_random_num()
-    num2 = get_random_num()
+    num1, num2 = get_random_num(), get_random_num()
     question = f'{num1} {num2}'
     result = str(get_gcd(num1, num2))
     return question, result
 
 
-start_game(brain_gcd, 'Find the greatest common divisor of given numbers.')
+def start_brain_gcd():
+    start_game(brain_gcd, 'Find the greatest common divisor of given numbers.')

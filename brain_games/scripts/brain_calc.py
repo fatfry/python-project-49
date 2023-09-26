@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.calc import brain_calc
-from brain_games.engine import start_game
+from brain_games.games.calc import start_calc_game
 
 
 def main():
-    start_game(brain_calc(), 'What is the result of the expression?')
+    start_calc_game()
 
 
 if __name__ == "__main__":

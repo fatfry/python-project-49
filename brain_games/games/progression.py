@@ -1,21 +1,20 @@
-#!/usr/bin/env python3
-import random
+from random import randint
+
+from brain_games.consts import PROGRESSION_LENGTH
 from brain_games.engine import start_game
-from brain_games.utils import get_random_start, get_step, get_random_length
+from brain_games.utils import get_random_num
 
 
 def brain_progression():
-    length_count = get_random_length()
-    start = get_random_start()
-    step = get_step()
-    stop = start + length_count * step
-    pg = list(range(start, stop, step))
-    random_index = random.randint(0, length_count - 1)
-    missed_number = str(pg[random_index])
-    result = missed_number
-    pg[random_index] = '..'
-    question = ' '.join(map(str, pg))
+    first_num, diff = get_random_num(), get_random_num()
+    missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
+    pg = ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff)
+                   for i in range(PROGRESSION_LENGTH)
+                   ])
+    result = str(missed_num_ind)
+    question = pg
     return question, result
 
 
-start_game(brain_progression, 'What number is missing in the progression?')
+def start_brain_pg():
+    start_game(brain_progression, 'What number is missing in the progression?')

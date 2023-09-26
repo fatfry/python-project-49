@@ -14,11 +14,11 @@ def get_math_sign_and_result(num1, num2):
 
 
 def brain_calc():
-    num1 = get_random_num()
-    num2 = get_random_num()
+    num1, num2 = get_random_num(), get_random_num()
     math_sign, result = get_math_sign_and_result(num1, num2)
     question = f"{num1} {math_sign} {num2}"
     return question, str(result)
 
 
-start_game(brain_calc, 'What is the result of the expression?')
+def start_calc_game():
+    start_game(brain_calc, 'What is the result of the expression?')

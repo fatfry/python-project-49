@@ -12,5 +12,6 @@ def brain_even():
     return problem_num, answer
 
 
-start_game(brain_even, "Answer \"yes\" if the number is even, "
-                       "otherwise answer \"no\".")
+def start_brain_even_game():
+    start_game(brain_even, 'Answer "yes" if the number is even, '
+                           'otherwise answer "no".')
