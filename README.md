@@ -1,4 +1,4 @@
-[описание](https://github.com/fatfry/python-project-49/edit/main/README.md#описание)
+[описание](https://github.com/fatfry/python-project-49/edit/main/README.md)
 
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
@@ -18,7 +18,7 @@ brain-prime - Определение простого числа.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/fatfry/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/fatfry/python-project-49/actions)
 [![asciicast](https://asciinema.org/a/593880.svg)](https://asciinema.org/a/593880)
-[![asciicast](https://asciinema.org/a/YaYgAv6xczJvXaCIh8zfDuVFe.svg)](https://asciinema.org/a/YaYgAv6xczJvXaCIh8zfDuVFe)
+[![asciicast](https://asciinema.org/a/H99sbCHgwZTDy7FCyqPDXl5M3.svg)](https://asciinema.org/a/H99sbCHgwZTDy7FCyqPDXl5M3)
 [![asciicast](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz.svg)](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz)
 [![asciicast](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6.svg)](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6)
 [![asciicast](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc.svg)](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc)
