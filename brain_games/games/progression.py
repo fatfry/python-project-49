@@ -11,7 +11,7 @@ def brain_progression():
     pg = ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff)
                    for i in range(PROGRESSION_LENGTH)
                    ])
-    result = str(missed_num_ind)
+    result = str(first_num + missed_num_ind * diff)
     question = pg
     return question, result
 
