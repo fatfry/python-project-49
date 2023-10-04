@@ -1,9 +1,13 @@
-[описание](https://github.com/fatfry/python-project-49/edit/main/README.md)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ecf726861979b5957a51/maintainability)](https://codeclimate.com/github/fatfry/python-project-49/maintainability)
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/fatfry/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/fatfry/python-project-49/actions)
+
+
+[описание](#games)
 
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
-Игры:
-
+### games
 
 
 brain-prime - Определение простого числа.
@@ -22,6 +26,4 @@ brain-calc (Калькулятор) - Арифметические выраже�
 [![asciicast](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc.svg)](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc)
 
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/ecf726861979b5957a51/maintainability)](https://codeclimate.com/github/fatfry/python-project-49/maintainability)
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/fatfry/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/fatfry/python-project-49/actions)
+
