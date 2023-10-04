@@ -2,6 +2,7 @@
 import math
 from brain_games.utils import get_random_num
 from brain_games.engine import start_game
+from brain_games.consts import BRAIN_GCD_INSTRUCTION
 
 
 def get_gcd(num1, num2):
@@ -16,4 +17,4 @@ def brain_gcd():
 
 
 def start_brain_gcd():
-    start_game(brain_gcd, 'Find the greatest common divisor of given numbers.')
+    start_game(brain_gcd, BRAIN_GCD_INSTRUCTION)

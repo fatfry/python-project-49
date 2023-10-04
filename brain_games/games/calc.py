@@ -1,6 +1,7 @@
 import random
 from brain_games.engine import start_game
 from brain_games.utils import get_random_num
+from brain_games.consts import BRAIN_CALC_INSTRUCTION
 
 
 def get_math_sign_and_result(num1, num2):
@@ -13,7 +14,7 @@ def get_math_sign_and_result(num1, num2):
     return math_sign, result
 
 
-def brain_calc():
+def get_math_question():
     num1, num2 = get_random_num(), get_random_num()
     math_sign, result = get_math_sign_and_result(num1, num2)
     question = f"{num1} {math_sign} {num2}"
@@ -21,4 +22,4 @@ def brain_calc():
 
 
 def start_calc_game():
-    start_game(brain_calc, 'What is the result of the expression?')
+    start_game(get_math_question, BRAIN_CALC_INSTRUCTION)

@@ -3,6 +3,7 @@ from random import randint
 from brain_games.consts import PROGRESSION_LENGTH
 from brain_games.engine import start_game
 from brain_games.utils import get_random_num
+from brain_games.consts import BRAIN_PG_INSTRUCTION
 
 
 def brain_progression():
@@ -17,4 +18,5 @@ def brain_progression():
 
 
 def start_brain_pg():
-    start_game(brain_progression, 'What number is missing in the progression?')
+    start_game(brain_progression, BRAIN_PG_INSTRUCTION)
+
