@@ -43,7 +43,7 @@ brain-gcd - Определение наибольшего общего дели�
 brain-calc (Калькулятор) - Арифметические выражения, которые необходимо вычислить.
 [![asciicast](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc.svg)](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc)
 
-[Установка игры:](#games)
+
 
 git clone git@github.com:fatfry/python-project-49.git
 
