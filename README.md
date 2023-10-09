@@ -1,7 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/ecf726861979b5957a51/maintainability)](https://codeclimate.com/github/fatfry/python-project-49/maintainability)
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/fatfry/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/fatfry/python-project-49/actions)
-
+[![hexlet-check](https://github.com/fatfry/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/fatfry/python-project-49/actions/workflows/hexlet-check.yml)
 ## Hexlet Project: Brain Games
 ### Описание 
 
