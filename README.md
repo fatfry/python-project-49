@@ -38,7 +38,7 @@ brain-even - Определение четного числа.
 [![asciicast](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz.svg)](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz)
 
 brain-gcd - Определение наибольшего общего делителя.
-[![asciicast](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6.svg)](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6)
+[![asciicast](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6.svg)](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6) 
 
 brain-calc (Калькулятор) - Арифметические выражения, которые необходимо вычислить.
 [![asciicast](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc.svg)](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc)
