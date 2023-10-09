@@ -19,4 +19,3 @@ def brain_progression():
 
 def start_brain_pg():
     start_game(brain_progression, BRAIN_PG_INSTRUCTION)
-
