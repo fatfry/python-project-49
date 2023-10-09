@@ -19,4 +19,4 @@ def brain_prime():
 
 
 def start_brain_prime():
-    start_game(brain_prime, str(BRAIN_PRIME_INSTRUCTION))
+    start_game(brain_prime, BRAIN_PRIME_INSTRUCTION)
