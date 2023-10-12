@@ -1,11 +1,12 @@
 import prompt
+from brain_games.consts import MAX_ATTEMPTS
 
 
 def start_game(get_question_and_answer, instruction):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name?')
     print(f'Hello, {name}\n{instruction}')
-    for _ in range(3):
+    for _ in range(MAX_ATTEMPTS):
         question, result = get_question_and_answer()
         print(f'Question: {question}')
         user_input = prompt.string('Your answer:')

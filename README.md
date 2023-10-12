@@ -1,6 +1,7 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/ecf726861979b5957a51/maintainability)](https://codeclimate.com/github/fatfry/python-project-49/maintainability)
+
 ### Hexlet tests and linter status:
 [![hexlet-check](https://github.com/fatfry/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/fatfry/python-project-49/actions/workflows/hexlet-check.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ecf726861979b5957a51/maintainability)](https://codeclimate.com/github/fatfry/python-project-49/maintainability)
 ## Hexlet Project: Brain Games
 ### Описание 
 
@@ -14,11 +15,11 @@
 
 ### Команды для вызова игр
 
-    brain-even # Чётное / Нечётное
-    brain-calc # Вычисления 
-    brain-gcd # Нахождение наибольшего общего делителя
-    brain-progression # Заполнение прогрессии
-    brain-prime # Простое число или нет
+    `brain-even` - Чётное / Нечётное
+    `brain-calc` - Вычисления 
+    `brain-gcd` - Нахождение наибольшего общего делителя
+    `brain-progression` - Заполнение прогрессии
+    `brain-prime` - Простое число или нет
 
 ### Правила игры
 Для **успешного** прохождения любой из игр необходимо дать **три правильных** ответа.
@@ -27,19 +28,19 @@
 ### Games
 
 
-brain-prime - Определение простого числа.
+`brain-prime` - Определение простого числа.
 [![asciicast](https://asciinema.org/a/593880.svg)](https://asciinema.org/a/593880)
 
-brain-progression (Прогрессия) - Поиск пропущенных чисел в последовательности чисел.
+`brain-progression` (Прогрессия) - Поиск пропущенных чисел в последовательности чисел.
 [![asciicast](https://asciinema.org/a/H99sbCHgwZTDy7FCyqPDXl5M3.svg)](https://asciinema.org/a/H99sbCHgwZTDy7FCyqPDXl5M3)
 
-brain-even - Определение четного числа.
+`brain-even` - Определение четного числа.
 [![asciicast](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz.svg)](https://asciinema.org/a/fNJYtdUKOG5WuCrKyfd6Q1Tnz)
 
-brain-gcd - Определение наибольшего общего делителя.
+`brain-gcd` - Определение наибольшего общего делителя.
 [![asciicast](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6.svg)](https://asciinema.org/a/9IjusJ2knzmHQa9IncTtW0Yw6) 
 
-brain-calc (Калькулятор) - Арифметические выражения, которые необходимо вычислить.
+`brain-calc` (Калькулятор) - Арифметические выражения, которые необходимо вычислить.
 [![asciicast](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc.svg)](https://asciinema.org/a/RusVOVB9bV1FhoCy16G7XUcqc)
 
 

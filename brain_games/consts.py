@@ -1,4 +1,5 @@
 PROGRESSION_LENGTH = 12
+MAX_ATTEMPTS = 3
 BRAIN_CALC_INSTRUCTION = 'What is the result of the expression?'
 EVEN_QUESTION_INSTRUCTION = ('Answer "yes" if the number is even,'
                              ' otherwise answer "no".')
