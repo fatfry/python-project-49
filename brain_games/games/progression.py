@@ -12,8 +12,10 @@ def create_progression(first_num, diff, missed_num_ind, progression_length):
 
 def brain_progression():
     first_num, diff = get_random_num(), get_random_num()
-    missed_num_ind = randint(0, PROGRESSION_LENGTH - 1)
-    question = create_progression(first_num, diff, missed_num_ind, PROGRESSION_LENGTH)
+    missed_num_ind: int = randint(0, PROGRESSION_LENGTH - 1)
+    question = create_progression(
+        first_num, diff, missed_num_ind, PROGRESSION_LENGTH
+    )
     result = str(first_num + missed_num_ind * diff)
     return question, result
 
