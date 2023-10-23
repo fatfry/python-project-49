@@ -7,8 +7,7 @@ from brain_games.consts import BRAIN_PG_INSTRUCTION
 
 
 def create_progression(first_num, diff, missed_num_ind, progression_length):
-    return ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff)
-                     for i in range(progression_length)])
+    return ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff) for i in range(progression_length)])
 
 
 def brain_progression():
