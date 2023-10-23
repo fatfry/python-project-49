@@ -1,13 +1,13 @@
 from random import randint
 
-from brain_games.consts import PROGRESSION_LENGTH
+from brain_games.consts import PROGRESSION_LENGTH, BRAIN_PG_INSTRUCTION
 from brain_games.engine import start_game
 from brain_games.utils import get_random_num
-from brain_games.consts import BRAIN_PG_INSTRUCTION
 
 
 def create_progression(first_num, diff, missed_num_ind, progression_length):
-    return ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff) for i in range(progression_length)])
+    return ' '.join(['..' if i == missed_num_ind else str(first_num + i * diff)
+                     for i in range(progression_length)])
 
 
 def brain_progression():
