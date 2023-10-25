@@ -12,11 +12,11 @@ def is_prime(number):
     return True
 
 
-def brain_prime():
+def get_prime_problem_num():
     problem_num = get_random_num()
     answer = 'yes' if is_prime(problem_num) else 'no'
     return problem_num, answer
 
 
 def start_brain_prime():
-    start_game(brain_prime, BRAIN_PRIME_INSTRUCTION)
+    start_game(get_prime_problem_num, BRAIN_PRIME_INSTRUCTION)

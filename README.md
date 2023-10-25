@@ -28,7 +28,7 @@
 ### Установка
 Для установки пакета, выполните следующую команду:
 
-`pip install brain-games`
+`python3 -m pip install --user git+https://github.com/fatfry/python-project-49.git`
 
 Вы также можете установить пакет из репозитория без клонирования локально. Для этого перейдите по ссылке:
 

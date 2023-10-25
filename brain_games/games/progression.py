@@ -10,7 +10,7 @@ def create_progression(first_num, diff, missed_num_ind, progression_length):
                      for i in range(progression_length)])
 
 
-def brain_progression():
+def get_progression_and_missed_num():
     first_num, diff = get_random_num(), get_random_num()
     missed_num_ind: int = randint(0, PROGRESSION_LENGTH - 1)
     question = create_progression(
@@ -21,4 +21,4 @@ def brain_progression():
 
 
 def start_brain_pg():
-    start_game(brain_progression, BRAIN_PG_INSTRUCTION)
+    start_game(get_progression_and_missed_num, BRAIN_PG_INSTRUCTION)
